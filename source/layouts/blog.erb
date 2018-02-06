@@ -4,12 +4,10 @@
         <time>
             <%= current_page.date.strftime('%b %e %Y') %>
         </time>
-        <div class="img_top">
-            <%= image_tag(current_page.data.image)%>
+        <div class="img_top" style="background-image: url(<%= image_path(current_page.data.image) %>);">
         </div>
         <%= yield %>
-        <div class="img_bot">
-            <%= image_tag(current_page.data.image)%>
+        <div class="img_bot" style="background-image: url(<%= image_path(current_page.data.image) %>);">
         </div>
     </article>
 <% end %>

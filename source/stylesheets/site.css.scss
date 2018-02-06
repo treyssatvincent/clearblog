@@ -104,18 +104,10 @@ article {
         height: 100px;
         overflow: hidden;
     }
-    img {
-        width: 100%;
-        position: relative;
-    }
     .img_top {
-        img {
-            top: -100px;
-        }
+        background-position: top;
     }
     .img_bot {
-        img {
-            top: -500px;
-        }
+        background-position: bottom;
     }
 }
