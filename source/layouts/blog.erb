@@ -1,0 +1,15 @@
+<% wrap_layout :layout do %>
+    <article>
+        <h1><%= current_page.data.title %></h1>
+        <time>
+            <%= current_page.date.strftime('%b %e %Y') %>
+        </time>
+        <div class="img_top">
+            <%= image_tag(current_page.data.image)%>
+        </div>
+        <%= yield %>
+        <div class="img_bot">
+            <%= image_tag(current_page.data.image)%>
+        </div>
+    </article>
+<% end %>

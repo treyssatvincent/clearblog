@@ -1,0 +1,10 @@
+<% page_content = File.read("data/" + current_page.data.slug + ".md") %>
+
+<% wrap_layout :layout do %>
+<main>
+    <article>
+        <h1><%= current_page.data.title %></h1>
+        <%= Redcarpet::Markdown.new(Redcarpet::Render::HTML.new).render(page_content) %>
+    </article>
+</main>
+<% end %>

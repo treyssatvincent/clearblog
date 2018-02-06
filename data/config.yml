@@ -1,0 +1,15 @@
+blog:
+    url: "http://localhost:4567"
+    title: "Clear Blog"
+    subtitle: "Simple demo for a simple template"
+    author: "Nino"
+
+rss:
+    summary: "false"
+
+colors: # comment all the 'colors' block to use random colors
+    - "62a69a"
+    - "616ea5"
+    - "a5616e"
+    - "a59961"
+    - "84b561"

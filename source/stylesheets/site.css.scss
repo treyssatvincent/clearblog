@@ -1,0 +1,110 @@
+$text-color: #000;
+$gap: 10px;
+$text_font: "Open Sans", "Gill Sans MT", "Gill Sans", Arial, sans-serif;
+$width: 1200px;
+
+body {
+    margin: 0;
+    position: absolute;
+    background: #fff;
+    font-family: $text_font;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    nav {
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+        a {
+            text-decoration: none;
+            color: $text-color;
+            margin: auto;
+            font-size: 1.3em;
+            text-transform: uppercase;
+            text-align: center;
+            p {
+                margin: 0;
+                font-size: inherit;
+            }
+            .site-title {
+                font-weight: bold;
+            }
+        }
+    }
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+section {
+    max-width: $width;
+    margin: $gap auto $gap auto;
+    padding: 0 20px;
+    min-height: 25vh;
+    display: flex;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 1.1em;
+    a {
+        color: inherit;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 30%;
+    }
+    a:hover {
+        color: #000;
+    }
+    background-size:cover;
+    background-position: center;
+}
+.section_content {
+    margin: auto;
+    width: 70%;
+    p {
+        margin: 0;
+    }
+    .more {
+        display: block;
+        margin: 10px 0;
+    }
+}
+footer {
+    text-align: center;
+    a {
+        color: #000;
+    }
+}
+
+article {
+    margin: auto;
+    max-width: $width;
+    time {
+        text-align: center;
+        text-transform: uppercase;
+        display: block;
+    }
+    h1 {
+        margin-bottom: 0;
+    }
+    div {
+        height: 100px;
+        overflow: hidden;
+    }
+    img {
+        width: 100%;
+        position: relative;
+    }
+    .img_top {
+        img {
+            top: -100px;
+        }
+    }
+    .img_bot {
+        img {
+            top: -500px;
+        }
+    }
+}

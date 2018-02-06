@@ -1,0 +1,28 @@
+<main>
+    <h1><%= data.config['blog']['title'] + " - " + data.config['blog']['subtitle'] %></h1>
+    <% blog.articles[0...5].each_with_index do |article, id| %>
+    <% colors = data.config['colors']
+    if (colors)
+        color = colors[id]
+    else
+        color = (0..2).map{"%0x" % (rand * 0x60 + 0x60)}.join
+    end %>
+        <section style="
+                        background-image: url(<%= image_path(article.data.image) %>);
+                        box-shadow: inset 0 0 0 1000px #<%= color %>CC">
+            <a href="<%= article.url %>">
+                <h2>
+                    <%= article.title %>
+                </h2>
+                <time>
+                    <%= article.date.strftime('%b %e %Y') %>
+                </time>
+            </a>
+
+            <div class="section_content">
+                <%= article.summary %>
+                <a class="more" href="<%= article.url %>">Read more</a>
+            </div>
+        </section>
+    <% end %>
+</main>
