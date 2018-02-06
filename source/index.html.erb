@@ -14,7 +14,7 @@
                 <h2>
                     <%= article.title %>
                 </h2>
-                <time>
+                <time datetime="<%= article.date.strftime('%F') %>">
                     <%= article.date.strftime('%b %e %Y') %>
                 </time>
             </a>

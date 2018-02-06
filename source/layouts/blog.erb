@@ -1,13 +1,26 @@
 <% wrap_layout :layout do %>
     <article>
         <h1><%= current_page.data.title %></h1>
-        <time>
+        <time datetime="<%= current_page.date.strftime('%F') %>">
             <%= current_page.date.strftime('%b %e %Y') %>
         </time>
-        <div class="img_top" style="background-image: url(<%= image_path(current_page.data.image) %>);">
+        <div class="article_img img_top" style="
+        background-image: url(<%= image_path(current_page.data.image) %>);
+        <% if (data.config['articlesImg']) %>
+            height:<%= data.config['articlesImg']['top'] %>px
+        <% end %>
+        ">
         </div>
+
         <%= yield %>
-        <div class="img_bot" style="background-image: url(<%= image_path(current_page.data.image) %>);">
+
+        <div class="article_img img_bot" style="
+        background-image: url(<%= image_path(current_page.data.image) %>);
+        <% if (data.config['articlesImg']) %>
+            height:<%= data.config['articlesImg']['bottom'] %>px
+        <% end %>
+        ">
         </div>
+
     </article>
 <% end %>

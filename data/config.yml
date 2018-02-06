@@ -7,6 +7,10 @@ blog:
 rss:
     summary: "false"
 
+articlesImg: # comment all the 'articlesImg' block to use 100px for both pictures
+    top: "150"
+    bottom: "100"
+
 colors: # comment all the 'colors' block to use random colors
     - "62a69a"
     - "616ea5"
