@@ -3,6 +3,7 @@ blog:
     title: "Clear Blog"
     subtitle: "Simple demo for a simple template"
     author: "Nino"
+    footer: "Clear Blog made with ❤️ & Middleman - <a href='https://github.com/treyssatvincent/clearblog'>Source code</a> - <a href='http://localhost:4567/feed.xml'>Feed</a></p>"
 
 rss:
     summary: "false"
