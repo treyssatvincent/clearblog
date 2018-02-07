@@ -20,9 +20,22 @@
             </a>
 
             <div class="section_content">
-                <%= article.summary %>
+                <%= strip_tags(article.summary) %>
                 <a class="more" href="<%= article.url %>">Read more</a>
             </div>
+        </section>
+    <% end %>
+
+    <% if blog.articles.length > 5 %>
+        <button id="showold">Show older articles</button>
+        <section class="old_articles">
+        <% for i in 5..blog.articles.length-1
+            article = blog.articles[i] %>
+
+                <a href="<%= article.url %>">
+                        <p><%= article.title %></p>
+                </a>
+        <% end %>
         </section>
     <% end %>
 </main>
