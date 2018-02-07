@@ -17,3 +17,6 @@ colors: # comment all the 'colors' block to use random colors
     - "a5616e"
     - "a59961"
     - "84b561"
+
+frontPage:
+    featured: 5 # featured articles on the front page (0 for infinite)

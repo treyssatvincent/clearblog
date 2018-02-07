@@ -1,15 +1,25 @@
-<main>
-    <h1><%= data.config['blog']['title'] + " - " + data.config['blog']['subtitle'] %></h1>
-    <% blog.articles[0...5].each_with_index do |article, id| %>
-    <% colors = data.config['colors']
-    if (colors)
-        color = colors[id]
+<%
+h1 = data.config['blog']['title'] + " - " + data.config['blog']['subtitle']
+featured = (data.config['frontPage']['featured'] != 0) ? data.config['frontPage']['featured'] : blog.articles.length
+def randomClearColor()
+   return (0..2).map{"%0x" % (rand * 0x60 + 0x60)}.join
+end
+colors = Array.new
+for articleId in 0...featured
+    if (data.config['colors'])
+        colors << data.config['colors'].fetch(articleId, randomClearColor)
     else
-        color = (0..2).map{"%0x" % (rand * 0x60 + 0x60)}.join
-    end %>
+        colors << randomClearColor
+    end
+end
+%>
+
+<main>
+    <h1><%= h1 %></h1>
+    <% blog.articles[0...featured].each_with_index do |article, id| %>
         <section style="
                         background-image: url(<%= image_path(article.data.image) %>);
-                        box-shadow: inset 0 0 0 1000px #<%= color %>CC">
+                        box-shadow: inset 0 0 0 1000px #<%= colors[id] %>CC">
             <a href="<%= article.url %>">
                 <h2>
                     <%= article.title %>
@@ -26,10 +36,10 @@
         </section>
     <% end %>
 
-    <% if blog.articles.length > 5 %>
+    <% if blog.articles.length > featured %>
         <button id="showold">Show older articles</button>
         <section class="old_articles">
-        <% for i in 5..blog.articles.length-1
+        <% for i in featured..blog.articles.length-1
             article = blog.articles[i] %>
 
                 <a href="<%= article.url %>">
