@@ -18,10 +18,9 @@ end %>
         <header>
             <nav>
                 <a href="<%= data.config['blog']['url'] %>"><p class="site-title"><%= data.config['blog']['title'] %></p></a>
-                <a href="<%= data.config['blog']['url'] %>/page"><p>Page</p></a>
-                <a href="#"><p>Sit</p></a>
-                <a href="#"><p>Dolor</p></a>
-                <a href="#"><p>Amet</p></a>
+                <% data.config['header'].each do |link| %>
+                    <a href="<%= link[1] %>"><p><%= link[0] %></p></a>
+                <% end %>
             </nav>
         </header>
 

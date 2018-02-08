@@ -21,3 +21,9 @@ colors: # comment all the 'colors' block to use random colors
 
 frontPage:
     featured: 5 # featured articles on the front page (0 for infinite)
+
+header:
+    Page: "/page"
+    Sit: "#"
+    Dolor: "#"
+    Amet: "#"
