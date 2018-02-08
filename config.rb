@@ -13,7 +13,7 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-set :markdown_engine, :redcarpet
+set :markdown_engine, :kramdown
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 activate :blog do |blog|
@@ -49,9 +49,8 @@ end
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-activate :gzip
-
 configure :build do
+    activate :gzip
     activate :minify_css
     activate :minify_html
     activate :imageoptim
