@@ -14,7 +14,7 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 set :markdown_engine, :kramdown
-set :markdown, :fenced_code_blocks => true, :smartypants => true
+activate :syntax, :line_numbers => true
 
 activate :blog do |blog|
     blog.permalink = "{title}.html"

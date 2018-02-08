@@ -4,7 +4,7 @@
 <main>
     <article>
         <h1><%= current_page.data.title %></h1>
-        <%= Redcarpet::Markdown.new(Redcarpet::Render::HTML.new).render(page_content) %>
+        <%= Kramdown::Document.new(page_content).to_html %>
     </article>
 </main>
 <% end %>

@@ -12,9 +12,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum vestibul
 ## Mauris vel enim posuere
 Mauris vel enim posuere, pharetra dolor at, venenatis mauris. Suspendisse posuere, lorem nec rhoncus mattis, erat urna rutrum massa, sit amet malesuada nisl leo vel quam. Vivamus vestibulum fringilla sem ut scelerisque. Etiam iaculis nibh vitae viverra laoreet. Nam vehicula turpis eget viverra gravida. Pellentesque mollis sem sit amet pretium viverra. Pellentesque scelerisque, purus ac vestibulum posuere, metus sem scelerisque nibh, nec imperdiet neque augue egestas turpis. Cras sem turpis, rutrum sed lorem ut, maximus aliquet ligula.[^1]
 
-    if ("lorem" == "ipsum")
-        p "dolor sit amet"
-    end
+~~~ ruby
+if ("lorem" == "ipsum")
+    p "dolor sit amet"
+end
+~~~
 
 ## Suspendisse dui ante
 Suspendisse dui ante, bibendum nec **venenatis semper**, aliquam sit amet erat. *Duis vel nisl scelerisque*, ornare orci eu, feugiat metus.

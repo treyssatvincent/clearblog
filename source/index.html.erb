@@ -1,5 +1,5 @@
 <%
-h1 = data.config['blog']['title'] + " - " + data.config['blog']['subtitle']
+h1 = data.config['blog']['subtitle']
 featured = (data.config['frontPage']['featured'] != 0) ? data.config['frontPage']['featured'] : blog.articles.length
 def randomClearColor()
    return (0..2).map{"%0x" % (rand * 0x60 + 0x60)}.join
