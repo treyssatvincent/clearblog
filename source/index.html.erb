@@ -42,7 +42,8 @@ end
     <% end %>
 
     <% if blog.articles.length > featured %>
-        <button id="showold">Show older articles</button>
+        <input type="checkbox" id="showold-trigger" />
+        <label id="showold" for="showold-trigger">Show older articles</label>
         <section class="old_articles">
         <% for i in featured..blog.articles.length-1
             article = blog.articles[i] %>

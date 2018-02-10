@@ -28,10 +28,13 @@ header {
                 margin: 0;
                 font-size: inherit;
             }
-            .site-title {
-                font-weight: bold;
-            }
         }
+        .site-title {
+            font-weight: bold;
+        }
+    }
+    input, label {
+        display: none;
     }
 }
 h1 {
@@ -66,14 +69,9 @@ section {
     background-position: center;
 }
 .old_articles {
-    display: flex;
+    display: none;
     justify-content: space-around;
     color: #000;
-    min-height: inherit;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-    height: 0px;
-    overflow: hidden;
     a {
         width: inherit;
         text-align: center;
@@ -83,14 +81,29 @@ section {
     }
 }
 #showold {
-    width: 100%
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f3f3f3;
+    width: 300px;
+    margin: auto;
 }
-#showold:focus + .old_articles {
-    height: auto;
-    overflow: visible;
+#showold:after {
+    content: " +";
 }
-#showold:focus {
+#showold-trigger {
     display: none;
+}
+#showold-trigger:checked ~ .old_articles {
+    display: flex;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    min-height: inherit;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+#showold-trigger:checked ~ #showold:after {
+    content: " ×";
 }
 .section_content {
     margin: auto;
@@ -121,16 +134,16 @@ article {
         display: block;
     }
     h1 {
-        margin-bottom: 0;
-    }
-    h1 {
         font-size: 1.5em;
+        margin-bottom: 0;
     }
     h2 {
         font-size: 1.2em;
+        padding: 0 5px;
     }
     h3, h4, h5 {
         font-size: 1em;
+        padding: 0 5px;
     }
     .article_img {
         background-size:cover;
@@ -142,6 +155,41 @@ article {
     .img_bot {
         background-position: 0% 80%;
     }
+    p {
+        padding: 0 10px;
+    }
 }
 
+@media screen and (max-width: 600px)
+{
+    header {
+        nav {
+            height: auto;
+            flex-wrap: wrap;
+            a {
+                margin: 5px 5%;
+            }
+            .site-title {
+                width: 100%;
+            }
+        }
+    }
+    section {
+        flex-direction: column;
+        a, .section_content {
+            width: inherit;
+        }
+        h2 {
+            margin-bottom: 0;
+        }
+        time {
+            margin-bottom: 10px;
+        }
+    }
+    article {
+        h1 {
+            margin-top: 5px;
+        }
+    }
+}
 <%= Rouge::Themes::Github.render(:scope => '.highlight') %>

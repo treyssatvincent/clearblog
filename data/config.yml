@@ -13,7 +13,7 @@ articlesImg: # comment all the 'articlesImg' block to use 100px for both picture
     bottom: "100"
 
 colors: # comment all the 'colors' block to use random colors
-    - "62a69a"
+    - "528e83"
     - "616ea5"
     - "a5616e"
     - "a59961"
