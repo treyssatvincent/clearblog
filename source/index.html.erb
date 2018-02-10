@@ -1,5 +1,9 @@
+---
+layout: "index"
+---
 <%
-h1 = data.config['blog']['subtitle']
+h1 = data.config['blog']['title']
+subtitle = data.config['blog']['subtitle']
 featured = (data.config['frontPage']['featured'] != 0) ? data.config['frontPage']['featured'] : blog.articles.length
 def randomClearColor()
    return (0..2).map{"%0x" % (rand * 0x60 + 0x60)}.join
@@ -16,6 +20,7 @@ end
 
 <main>
     <h1><%= h1 %></h1>
+    <p class="subtitle"><%= subtitle %></p>
     <% blog.articles[0...featured].each_with_index do |article, id| %>
         <section style="
                         background-image: url(<%= image_path(article.data.image) %>);

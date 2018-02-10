@@ -1,6 +1,6 @@
 <% page_content = File.read("data/" + current_page.data.slug + ".md") %>
 
-<% wrap_layout :layout do %>
+<% wrap_layout :body do %>
 <main>
     <article>
         <h1><%= current_page.data.title %></h1>

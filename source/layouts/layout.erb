@@ -14,20 +14,7 @@ end %>
         <title><%= title %></title>
         <%= stylesheet_link_tag "site" %>
     </head>
-    <body>
-        <header>
-            <nav>
-                <a href="<%= data.config['blog']['url'] %>"><p class="site-title"><%= data.config['blog']['title'] %></p></a>
-                <% data.config['header'].each do |link| %>
-                    <a href="<%= link[1] %>"><p><%= link[0] %></p></a>
-                <% end %>
-            </nav>
-        </header>
 
-        <%= yield %>
+    <%= yield %>
 
-        <footer>
-            <p><%= data.config['blog']['footer'] %></p>
-        </footer>
-    </body>
 </html>

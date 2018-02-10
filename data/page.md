@@ -1,1 +1,1 @@
-This not a blog post, this is a page, you may want pages to make a about page or something else.
+This not a blog post, this is a page, you could use it for about page or something similar.
