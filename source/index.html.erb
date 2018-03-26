@@ -18,7 +18,7 @@ end
 <main>
     <% blog.articles[0...featured].each_with_index do |article, id| %>
         <section style="
-                        background-image: url(<%=data.config['blog']['url'] %><%= image_path(article.data.image) %>);
+                        background-image: url(<%= image_path(article.data.image) %>);
                         box-shadow: inset 0 0 0 1000px #<%= colors[id] %>CC">
 
                 <h2><%= link_to article.title, article.path %></h2>

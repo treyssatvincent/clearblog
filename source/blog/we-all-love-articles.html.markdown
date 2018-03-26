@@ -18,6 +18,10 @@ if ("lorem" == "ipsum")
 end
 ~~~
 
+## I love images :
+
+![Clearblog's logo](clearblog.svg)
+
 ## Suspendisse dui ante
 Suspendisse dui ante, bibendum nec **venenatis semper**, aliquam sit amet erat. *Duis vel nisl scelerisque*, ornare orci eu, feugiat metus.
 

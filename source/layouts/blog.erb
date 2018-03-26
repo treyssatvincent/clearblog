@@ -5,7 +5,7 @@
             <%= current_page.date.strftime('%b %e %Y') %>
         </time>
         <div class="article_img img_top" style="
-        background-image: url(<%=data.config['blog']['url'] %><%= image_path(current_page.data.image) %>);
+        background-image: url(<%= image_path(current_page.data.image) %>);
         <% if (data.config['articlesImg']) %>
             height:<%= data.config['articlesImg']['top'] %>px
         <% end %>
@@ -15,7 +15,7 @@
         <%= yield %>
 
         <div class="article_img img_bot" style="
-        background-image: url(<%=data.config['blog']['url'] %><%= image_path(current_page.data.image) %>);
+        background-image: url(<%= image_path(current_page.data.image) %>);
         <% if (data.config['articlesImg']) %>
             height:<%= data.config['articlesImg']['bottom'] %>px
         <% end %>

@@ -6,6 +6,8 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+set :relative_links, true
+activate :relative_assets
 set :markdown_engine, :kramdown
 activate :syntax, :line_numbers => true
 
@@ -15,8 +17,10 @@ activate :blog do |blog|
     blog.layout = "blog"
 end
 
+
+
 configure :build do
-#    activate :gzip # Useless, unless the server support precompressed ".gz"
+   # activate :gzip # Useless, unless the server support precompressed ".gz"
     activate :minify_css
     activate :minify_html do |options| # Overwrite default options
       options.remove_quotes              = false   # Remove quotes (break opengraph balises)
@@ -28,8 +32,6 @@ end
 
 activate :livereload
 activate :directory_indexes
-
-set :relative_links, true
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git

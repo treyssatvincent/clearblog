@@ -1,6 +1,5 @@
 # Clear Blog
 Static blog made with middleman
-![ClearBlog's logo](/source/images/clearblog.svg)
 
 [Live demo](https://treyssatvincent.github.io/clearblog/)
 
