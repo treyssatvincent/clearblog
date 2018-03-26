@@ -1,14 +1,7 @@
-# Activate and configure extensions
-# https://middlemanapp.com/advanced/configuration/#configuring-extensions
-
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-# Layouts
-# https://middlemanapp.com/basics/layouts/
-
-# Per-page layout changes
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
@@ -22,37 +15,13 @@ activate :blog do |blog|
     blog.layout = "blog"
 end
 
-# With alternative layout
-# page '/path/to/file.html', layout: 'other_layout'
-
-# Proxy pages
-# https://middlemanapp.com/advanced/dynamic-pages/
-
-# proxy(
-#   '/this-page-has-no-template.html',
-#   '/template-file.html',
-#   locals: {
-#     which_fake_page: 'Rendering a fake page with a local variable'
-#   },
-# )
-
-# Helpers
-# Methods defined in the helpers block are available in templates
-# https://middlemanapp.com/basics/helper-methods/
-
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
-
-# Build-specific configuration
-# https://middlemanapp.com/advanced/configuration/#environment-specific-settings
-
 configure :build do
-    activate :gzip
+#    activate :gzip # Useless, unless the server support precompressed ".gz"
     activate :minify_css
-    activate :minify_html
+    activate :minify_html do |options| # Overwrite default options
+      options.remove_quotes              = false   # Remove quotes (break opengraph balises)
+      options.remove_http_protocol       = true  # Remove HTTP protocol
+    end
     activate :imageoptim
     activate :asset_hash
 end
@@ -60,10 +29,9 @@ end
 activate :livereload
 activate :directory_indexes
 
-# activate :deploy do |deploy|
-#   deploy.deploy_method = :rsync
-#   deploy.host          = ''
-#   deploy.path          = ''
-#   deploy.build_before = true
-#   deploy.clean = true
-# end
+set :relative_links, true
+
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.build_before = true
+end

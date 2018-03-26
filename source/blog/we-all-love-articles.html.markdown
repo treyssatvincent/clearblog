@@ -2,7 +2,7 @@
 
 title: We all love articles
 date: 2018-02-03 17:12 UTC
-image: "/images/cole-patrick-1.jpg"
+image: "images/cole-patrick-1.jpg"
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum vestibulum tellus, fermentum feugiat urna. Donec in rhoncus est, at varius nulla. Curabitur porttitor nisi ac lacus condimentum cursus. Quisque sit amet eros ac enim aliquet molestie. Suspendisse potenti. Etiam blandit eget ante in vestibulum. Sed aliquet felis non mollis ullamcorper. Nam pharetra mauris nunc, quis hendrerit libero congue quis. Maecenas eu elementum lorem, quis cursus eros. Maecenas hendrerit ligula in nisl ultricies, in varius erat aliquet. Suspendisse consequat metus eu nulla ultricies.

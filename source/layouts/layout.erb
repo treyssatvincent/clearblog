@@ -1,20 +1,79 @@
 <%
+ogMeta = Hash.new
+
 if (current_page.data.title)
     title = current_page.data.title + " | " + data.config['blog']['title']
+    ogMeta.store("og:title", current_page.data.title)
+    ogMeta.store("og:site_name", data.config['blog']['title'])
 else
     title = data.config['blog']['title'] + " | " + data.config['blog']['subtitle']
-end %>
+    ogMeta.store("og:title", data.config['blog']['title'])
+end
+
+if !current_page.data.image.blank?
+    ogMeta.store("og:image", data.config['blog']['url'] + (image_path current_page.data.image))
+end
+
+ogMeta.store("og:url", data.config['blog']['url'] + current_page.url)
+
+if (current_page.respond_to?(:date))
+    ogMeta.store("og:type", "article")
+    ogMeta.store("og:description", strip_tags(current_page.summary))
+    ogMeta.store("article:published_time", current_page.date.strftime('%F'))
+    if !data.config['blog']['author'].blank?
+        ogMeta.store("article:author", data.config['blog']['author'])
+    end
+    if !current_page.tags.blank?
+        ogMeta.store("tags", current_page.tags)
+    end
+else
+    ogMeta.store("og:type", "website")
+    ogMeta.store("og:description", data.config['blog']['subtitle'])
+end
+%>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport"
-              content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <% ogMeta.each do |property, content| %>
+            <meta property="<%= property %>" content="<%= content %>"/>
+        <% end %>
+
         <title><%= title %></title>
-        <%= stylesheet_link_tag "site" %>
+
+        <%= stylesheet_link_tag "site", :relative => true %>
+
     </head>
 
+    <body>
+
+    <header>
+
+        <nav>
+            <a href="<%= data.config['blog']['url'] %>" class="site-title">
+                <% if !current_page.data.title.blank? %>
+                    <p><%= data.config['blog']['title'] %></p>
+                <% else %>
+                    <h1><%= data.config['blog']['title'] %></h1>
+                <% end %>
+            </a>
+
+            <% data.config['header'].each do |link| %>
+                <%= link_to link[0], link[1] %>
+            <% end %>
+        </nav>
+
+    </header>
+
     <%= yield %>
+
+    <footer>
+        <p><%= data.config['blog']['footer'] %></p>
+    </footer>
+
+    </body>
 
 </html>

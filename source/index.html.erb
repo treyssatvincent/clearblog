@@ -1,9 +1,7 @@
 ---
-layout: "index"
+image: "images/clearblog.png"
 ---
 <%
-h1 = data.config['blog']['title']
-subtitle = data.config['blog']['subtitle']
 featured = (data.config['frontPage']['featured'] != 0) ? data.config['frontPage']['featured'] : blog.articles.length
 def randomClearColor()
    return (0..2).map{"%0x" % (rand * 0x60 + 0x60)}.join
@@ -17,27 +15,22 @@ for articleId in 0...featured
     end
 end
 %>
-
 <main>
-    <h1><%= h1 %></h1>
-    <p class="subtitle"><%= subtitle %></p>
     <% blog.articles[0...featured].each_with_index do |article, id| %>
         <section style="
-                        background-image: url(<%= image_path(article.data.image) %>);
+                        background-image: url(<%=data.config['blog']['url'] %><%= image_path(article.data.image) %>);
                         box-shadow: inset 0 0 0 1000px #<%= colors[id] %>CC">
-            <a href="<%= article.url %>">
-                <h2>
-                    <%= article.title %>
-                </h2>
+
+                <h2><%= link_to article.title, article.path %></h2>
+
                 <time datetime="<%= article.date.strftime('%F') %>">
-                    <%= article.date.strftime('%b %e %Y') %>
+                    <%= link_to article.date.strftime('%b %e %Y'), article.path %>
                 </time>
-            </a>
 
             <div class="section_content">
-                <%= strip_tags(article.summary) %>
-                <a class="more" href="<%= article.url %>">Read more</a>
+                <p><%= strip_tags(article.summary) %></p>
             </div>
+
         </section>
     <% end %>
 

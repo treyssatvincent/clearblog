@@ -1,5 +1,9 @@
 # Clear Blog
 Static blog made with middleman
+![ClearBlog's logo](/source/images/clearblog.svg)
+
+[Live demo](https://treyssatvincent.github.io/clearblog/)
+
 
 ## Installation
 You need to install [Middleman](https://middlemanapp.com/) before.
@@ -47,3 +51,4 @@ The 3 pictures provided are licensed under [Unsplash Licence](https://unsplash.c
 
 ## License
 This blog template is licensed under MIT License.
+The logo is licensed under the Creative Commons Attribution 4.0 International License.

@@ -1,9 +1,9 @@
 blog:
-    url: "http://localhost:4567"
+    url: "https://treyssatvincent.github.io/clearblog"
     title: "Clear Blog"
     subtitle: "Simple demo for a simple template"
     author: "Nino"
-    footer: "Clear Blog made with ❤️ & Middleman - <a href='https://github.com/treyssatvincent/clearblog'>Source code</a> - <a href='http://localhost:4567/feed.xml'>Feed</a>"
+    footer: "Clear Blog made with ❤️ & Middleman - <a href='https://github.com/treyssatvincent/clearblog'>Source code</a> - <a href='https://treyssatvincent.github.io/clearblog/feed.xml'>Feed</a>"
 
 rss:
     summary: "false"
@@ -23,7 +23,7 @@ frontPage:
     featured: 5 # featured articles on the front page (0 for infinite)
 
 header:
-    Page: "/page"
+    Page: "page"
     Sit: "#"
     Dolor: "#"
     Amet: "#"
