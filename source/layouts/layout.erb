@@ -11,7 +11,7 @@ else
 end
 
 if !current_page.data.image.blank?
-    ogMeta.store("og:image", data.config['blog']['url'] + "// " + (image_path current_page.data.image))
+    ogMeta.store("og:image", data.config['blog']['url'] + "//" + (image_path current_page.data.image))
 end
 
 ogMeta.store("og:url", data.config['blog']['url'] + current_page.url)

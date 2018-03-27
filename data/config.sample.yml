@@ -1,0 +1,29 @@
+blog:
+    url: "https://treyssatvincent.github.io/clearblog"
+    title: "Clear Blog"
+    subtitle: "Simple demo for a simple template"
+    author: "Nino"
+    footer: "Clear Blog made with ❤️ & Middleman - <a href='https://github.com/treyssatvincent/clearblog'>Source code</a> - <a href='https://treyssatvincent.github.io/clearblog/feed.xml'>Feed</a>"
+
+rss:
+    summary: "false"
+
+articlesImg: # comment all the 'articlesImg' block to use 100px for both pictures
+    top: "150"
+    bottom: "100"
+
+colors: # comment all the 'colors' block to use random colors
+    - "528e83"
+    - "616ea5"
+    - "a5616e"
+    - "a59961"
+    - "84b561"
+
+frontPage:
+    featured: 5 # featured articles on the front page (0 for infinite)
+
+header:
+    Page: "page"
+    Sit: "#"
+    Dolor: "#"
+    Amet: "#"
