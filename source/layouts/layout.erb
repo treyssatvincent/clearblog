@@ -10,14 +10,14 @@ else
     ogMeta.store("og:title", data.config['blog']['title'])
 end
 
-if !current_page.data.image.blank?
-    ogMeta.store("og:image", data.config['blog']['url'] + "//" + (image_path current_page.data.image))
-end
 
 ogMeta.store("og:url", data.config['blog']['url'] + current_page.url)
 
 if (current_page.respond_to?(:date))
     ogMeta.store("og:type", "article")
+    if !current_page.data.image.blank?
+        ogMeta.store("og:image", data.config['blog']['url'] + "/" + (image_path current_page.data.image).sub!("../", ""))
+    end
     ogMeta.store("og:description", strip_tags(current_page.summary))
     ogMeta.store("article:published_time", current_page.date.strftime('%F'))
     if !data.config['blog']['author'].blank?
@@ -28,6 +28,9 @@ if (current_page.respond_to?(:date))
     end
 else
     ogMeta.store("og:type", "website")
+    if !current_page.data.image.blank?
+        ogMeta.store("og:image", data.config['blog']['url'] + "/" + (image_path current_page.data.image))
+    end
     ogMeta.store("og:description", data.config['blog']['subtitle'])
 end
 %>
