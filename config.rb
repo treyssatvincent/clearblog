@@ -17,8 +17,6 @@ activate :blog do |blog|
     blog.layout = "blog"
 end
 
-
-
 configure :build do
    # activate :gzip # Useless, unless the server support precompressed ".gz"
     activate :minify_css
