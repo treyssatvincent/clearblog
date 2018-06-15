@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Clear Blog</title>
+  <subtitle>Simple demo for a simple template</subtitle>
+  <id>https://treyssatvincent.github.io/clearblog</id>
+  <link href="https://treyssatvincent.github.io/clearblog"/>
+  <link href="https://treyssatvincent.github.io/feed.xml" rel="self"/>
+  <updated>2018-02-03T18:12:00+01:00</updated>
+  <author>
+    <name>Nino</name>
+  </author>
+  <entry>
+    <title>We all love articles</title>
+    <link rel="alternate" href="https://treyssatvincent.github.io/we-all-love-articles/"/>
+    <id>https://treyssatvincent.github.io/we-all-love-articles/</id>
+    <published>2018-02-03T18:12:00+01:00</published>
+    <updated>2018-06-15T21:26:49+02:00</updated>
+    <author>
+      <name>Nino</name>
+    </author>
+    <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum vestibulum tellus, fermentum feugiat urna. Donec in rhoncus est, at varius nulla. Curabitur porttitor nisi ac lacus condimentum cursus. Quisque sit amet eros ac enim aliquet molestie. Suspendisse potenti. Etiam blandit eget ante in vestibulum. Sed aliquet felis non mollis ullamcorper. Nam pharetra mauris nunc, quis hendrerit libero congue quis. Maecenas eu elementum lorem, quis cursus eros. Maecenas hendrerit ligula in nisl ultricies, in varius erat aliquet. Suspendisse consequat metus eu nulla ultricies.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sit amet eleifend mauris gravida. Aliquam sed congue sapien.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id="mauris-vel-enim-posuere"&gt;Mauris vel enim posuere&lt;/h2&gt;
+&lt;p&gt;Mauris vel enim posuere, pharetra dolor at, venenatis mauris. Suspendisse posuere, lorem nec rhoncus mattis, erat urna rutrum massa, sit amet malesuada nisl leo vel quam. Vivamus vestibulum fringilla sem ut scelerisque. Etiam iaculis nibh vitae viverra laoreet. Nam vehicula turpis eget viverra gravida. Pellentesque mollis sem sit amet pretium viverra. Pellentesque scelerisque, purus ac vestibulum posuere, metus sem scelerisque nibh, nec imperdiet neque augue egestas turpis. Cras sem turpis, rutrum sed lorem ut, maximus aliquet ligula.&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;table class="rouge-table"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="rouge-gutter gl"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class="rouge-code"&gt;&lt;pre&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"lorem"&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s2"&gt;"ipsum"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="nb"&gt;p&lt;/span&gt; &lt;span class="s2"&gt;"dolor sit amet"&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="i-love-images-"&gt;I love images :&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src="../images/clearblog-e6ab267f.svg" alt="Clearblog's logo" /&gt;&lt;/p&gt;
+
+&lt;h2 id="suspendisse-dui-ante"&gt;Suspendisse dui ante&lt;/h2&gt;
+&lt;p&gt;Suspendisse dui ante, bibendum nec &lt;strong&gt;venenatis semper&lt;/strong&gt;, aliquam sit amet erat. &lt;em&gt;Duis vel nisl scelerisque&lt;/em&gt;, ornare orci eu, feugiat metus.&lt;/p&gt;
+
+&lt;h3 id="donec"&gt;Donec&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Donec non semper erat&lt;/li&gt;
+  &lt;li&gt;Ac sollicitudin nibh&lt;/li&gt;
+  &lt;li&gt;In ex nibh euismod ac mollis aliquet&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id="curabitur"&gt;Curabitur&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Semper felis venenatis&lt;/li&gt;
+  &lt;li&gt;Lobortis tortor&lt;/li&gt;
+  &lt;li&gt;Maecenas viverra cursus mauris&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="footnotes"&gt;
+  &lt;ol&gt;
+    &lt;li id="fn:1"&gt;
+      &lt;p&gt;this is a note. &lt;a href="#fnref:1" class="reversefootnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Lorem ipsum sit dolor</title>
+    <link rel="alternate" href="https://treyssatvincent.github.io/lorem-ipsum-sit-dolor/"/>
+    <id>https://treyssatvincent.github.io/lorem-ipsum-sit-dolor/</id>
+    <published>2018-02-02T17:29:00+01:00</published>
+    <updated>2018-06-15T21:26:49+02:00</updated>
+    <author>
+      <name>Nino</name>
+    </author>
+    <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum vestibulum tellus, fermentum feugiat urna. Donec in rhoncus est, at varius nulla. Curabitur porttitor nisi ac lacus condimentum cursus. Quisque sit amet eros ac enim aliquet molestie. Suspendisse potenti. Etiam blandit eget ante in vestibulum. Sed aliquet felis non mollis ullamcorper. Nam pharetra mauris nunc, quis hendrerit libero congue quis. Maecenas eu elementum lorem, quis cursus eros. Maecenas hendrerit ligula in nisl ultricies, in varius erat aliquet. Suspendisse consequat metus eu nulla ultricies.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sit amet eleifend mauris gravida. Aliquam sed congue sapien.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id="mauris-vel-enim-posuere"&gt;Mauris vel enim posuere&lt;/h2&gt;
+&lt;p&gt;Mauris vel enim posuere, pharetra dolor at, venenatis mauris. Suspendisse posuere, lorem nec rhoncus mattis, erat urna rutrum massa, sit amet malesuada nisl leo vel quam. Vivamus vestibulum fringilla sem ut scelerisque. Etiam iaculis nibh vitae viverra laoreet. Nam vehicula turpis eget viverra gravida. Pellentesque mollis sem sit amet pretium viverra. Pellentesque scelerisque, purus ac vestibulum posuere, metus sem scelerisque nibh, nec imperdiet neque augue egestas turpis. Cras sem turpis, rutrum sed lorem ut, maximus aliquet ligula.&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;table class="rouge-table"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="rouge-gutter gl"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class="rouge-code"&gt;&lt;pre&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"lorem"&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s2"&gt;"ipsum"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="nb"&gt;p&lt;/span&gt; &lt;span class="s2"&gt;"dolor sit amet"&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="i-love-images-"&gt;I love images :&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src="../images/clearblog-e6ab267f.svg" alt="Clearblog's logo" /&gt;&lt;/p&gt;
+
+&lt;h2 id="suspendisse-dui-ante"&gt;Suspendisse dui ante&lt;/h2&gt;
+&lt;p&gt;Suspendisse dui ante, bibendum nec &lt;strong&gt;venenatis semper&lt;/strong&gt;, aliquam sit amet erat. &lt;em&gt;Duis vel nisl scelerisque&lt;/em&gt;, ornare orci eu, feugiat metus.&lt;/p&gt;
+
+&lt;h3 id="donec"&gt;Donec&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Donec non semper erat&lt;/li&gt;
+  &lt;li&gt;Ac sollicitudin nibh&lt;/li&gt;
+  &lt;li&gt;In ex nibh euismod ac mollis aliquet&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id="curabitur"&gt;Curabitur&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Semper felis venenatis&lt;/li&gt;
+  &lt;li&gt;Lobortis tortor&lt;/li&gt;
+  &lt;li&gt;Maecenas viverra cursus mauris&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="footnotes"&gt;
+  &lt;ol&gt;
+    &lt;li id="fn:1"&gt;
+      &lt;p&gt;this is a note. &lt;a href="#fnref:1" class="reversefootnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+  <entry>
+    <title>My great Article</title>
+    <link rel="alternate" href="https://treyssatvincent.github.io/my-great-article/"/>
+    <id>https://treyssatvincent.github.io/my-great-article/</id>
+    <published>2018-02-01T17:12:00+01:00</published>
+    <updated>2018-06-15T21:26:49+02:00</updated>
+    <author>
+      <name>Nino</name>
+    </author>
+    <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum vestibulum tellus, fermentum feugiat urna. Donec in rhoncus est, at varius nulla. Curabitur porttitor nisi ac lacus condimentum cursus. Quisque sit amet eros ac enim aliquet molestie. Suspendisse potenti. Etiam blandit eget ante in vestibulum. Sed aliquet felis non mollis ullamcorper. Nam pharetra mauris nunc, quis hendrerit libero congue quis. Maecenas eu elementum lorem, quis cursus eros. Maecenas hendrerit ligula in nisl ultricies, in varius erat aliquet. Suspendisse consequat metus eu nulla ultricies.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sit amet eleifend mauris gravida. Aliquam sed congue sapien.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id="mauris-vel-enim-posuere"&gt;Mauris vel enim posuere&lt;/h2&gt;
+&lt;p&gt;Mauris vel enim posuere, pharetra dolor at, venenatis mauris. Suspendisse posuere, lorem nec rhoncus mattis, erat urna rutrum massa, sit amet malesuada nisl leo vel quam. Vivamus vestibulum fringilla sem ut scelerisque. Etiam iaculis nibh vitae viverra laoreet. Nam vehicula turpis eget viverra gravida. Pellentesque mollis sem sit amet pretium viverra. Pellentesque scelerisque, purus ac vestibulum posuere, metus sem scelerisque nibh, nec imperdiet neque augue egestas turpis. Cras sem turpis, rutrum sed lorem ut, maximus aliquet ligula.&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre class="highlight ruby"&gt;&lt;code&gt;&lt;table class="rouge-table"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="rouge-gutter gl"&gt;&lt;pre class="lineno"&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class="rouge-code"&gt;&lt;pre&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"lorem"&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s2"&gt;"ipsum"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="nb"&gt;p&lt;/span&gt; &lt;span class="s2"&gt;"dolor sit amet"&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id="i-love-images-"&gt;I love images :&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src="../images/clearblog-e6ab267f.svg" alt="Clearblog's logo" /&gt;&lt;/p&gt;
+
+&lt;h2 id="suspendisse-dui-ante"&gt;Suspendisse dui ante&lt;/h2&gt;
+&lt;p&gt;Suspendisse dui ante, bibendum nec &lt;strong&gt;venenatis semper&lt;/strong&gt;, aliquam sit amet erat. &lt;em&gt;Duis vel nisl scelerisque&lt;/em&gt;, ornare orci eu, feugiat metus.&lt;/p&gt;
+
+&lt;h3 id="donec"&gt;Donec&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Donec non semper erat&lt;/li&gt;
+  &lt;li&gt;Ac sollicitudin nibh&lt;/li&gt;
+  &lt;li&gt;In ex nibh euismod ac mollis aliquet&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id="curabitur"&gt;Curabitur&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Semper felis venenatis&lt;/li&gt;
+  &lt;li&gt;Lobortis tortor&lt;/li&gt;
+  &lt;li&gt;Maecenas viverra cursus mauris&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="footnotes"&gt;
+  &lt;ol&gt;
+    &lt;li id="fn:1"&gt;
+      &lt;p&gt;this is a note. &lt;a href="#fnref:1" class="reversefootnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>
